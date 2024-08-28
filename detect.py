@@ -186,7 +186,7 @@ def main():
     parser.add_argument('--top_k', type=int, default=5,
                         help='number of categories with highest score to display')
     parser.add_argument('--camera_idx', type=int, help='Index of which video source to use. ', default=0)
-    parser.add_argument('--threshold', type=float, default=0,
+    parser.add_argument('--threshold', type=float, default=0.1,
                         help='classifier score threshold')
     parser.add_argument('--edge_tpu', action='store_true', help='Use EdgeTPU')
     parser.add_argument('--skip_frames', type=int, default=0, help='Number of frames to skip between each processed frame')

@@ -367,7 +367,7 @@ def append_objs_to_img(cv2_im, inference_size, objs, labels, frame_count, face_i
         if label == 'person':
             # Check if this bounding box overlaps significantly with any identified person
             is_identified = any(
-                overlap((x0, y0, x1, y1), data['bbox']) > 0.7 for data in identified_persons.values()
+                overlap((x0, y0, x1, y1), data['bbox']) > 0.5 for data in identified_persons.values()
             )
 
             if not is_identified:

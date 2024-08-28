@@ -183,7 +183,7 @@ def main():
                         default=os.path.join(default_model_dir, default_emb_model))
     parser.add_argument('--labels', help='label file path',
                         default=os.path.join(default_model_dir, default_labels))
-    parser.add_argument('--top_k', type=int, default=10,
+    parser.add_argument('--top_k', type=int, default=5,
                         help='number of categories with highest score to display')
     parser.add_argument('--camera_idx', type=int, help='Index of which video source to use. ', default=0)
     parser.add_argument('--threshold', type=float, default=0,
